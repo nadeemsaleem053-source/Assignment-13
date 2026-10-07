@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        .top-bar {
+            background-color: #111111;
+            padding: 8px 5%;
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+            font-size: 14px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .top-bar a:hover {
+            color: #ff9900;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+            background: #ffaa00;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222222;
+            font-weight: 600;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff9900;
+        }
+
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158') center/cover no-repeat;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            color: #ffffff;
+        }
+
+        .hero-sub {
+            font-size: 13px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            max-width: 600px;
+            line-height: 1.2;
+        }
+
+        .hero-desc {
+            font-size: 14px;
+            max-width: 600px;
+            color: #dddddd;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .hero-btn {
+            background-color: #ffaa00;
+            color: #ffffff;
+            padding: 12px 30px;
+            border: none;
+            font-weight: bold;
+            font-size: 13px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: background 0.3s;
+        }
+
+        .hero-btn:hover {
+            background-color: #e69900;
+        }
+
+        .services {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .card {
+            margin-bottom: 50px;
+        }
+
+        .hexagon {
+            width: 80px;
+            height: 80px;
+            background: transparent;
+            border: 2px solid #cccccc;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px auto;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .hexagon i {
+            font-size: 26px;
+            color: #777777;
+            transition: color 0.3s ease;
+        }
+
+        .card:hover .hexagon {
+            border-color: #ff9900;
+            background-color: #ff9900;
+        }
+
+        .card:hover .hexagon i {
+            color: #ffffff;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #111111;
+        }
+
+        .card-desc {
+            font-size: 14px;
+            color: #777777;
+            line-height: 1.6;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero-title {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <div class="logo-icon"></div>
+            Industry
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-sub">DON'T LOOK FURTHER, HERE IS THE KEY</div>
+        <h1 class="hero-title">We're Industrial solution</h1>
+        <p class="hero-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim. sed do eiusmod tempor incididunt.</p>
+        <button class="hero-btn">GET STARTED</button>
+    </section>
+
+    <section class="services">
+        <div class="card">
+            <div class="hexagon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h2 class="card-title">Maintenance</h2>
+            <p class="card-desc">inappropriate behavior is often laughed off as "boys will be boys," women face higher conduct standards especially in the workplace. That's why.</p>
+        </div>
+
+        <div class="card">
+            <div class="hexagon">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h2 class="card-title">Residential Service</h2>
+            <p class="card-desc">inappropriate behavior is often laughed off as "boys will be boys," women face higher conduct standards especially in the workplace. That's why.</p>
+        </div>
+
+        <div class="card">
+            <div class="hexagon">
+                <i class="fa-solid fa-bug"></i>
+            </div>
+            <h2 class="card-title">Commercial Service</h2>
+            <p class="card-desc">inappropriate behavior is often laughed off as "boys will be boys," women face higher conduct standards especially in the workplace. That's why.</p>
+        </div>
+    </section>
+
+</body>
+</html>
